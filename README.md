@@ -1,68 +1,92 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Name
 
-## Available Scripts
+## Instructions how to start
 
-In the project directory, you can run:
+create `.env` file like the example `.env.sample`
 
-### `npm start`
+start with `npm run start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**http://localhost:3000**
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Description
 
-### `npm test`
+Describe your project in one/two lines.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Motivation
 
-### `npm run build`
+Just a litle API for educational purposes.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## User Stories
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**404** - As a user I want to see a nice 404 page when I go to a page that doesn’t exist so that I know it was my fault
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**500** - As a user I want to see a nice error page when the super team screws it up so that I know that is not my fault
 
-### `npm run eject`
+**Homepage** - As a user I want to be able to access the homepage so that I see what the app is about and login and signup
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Sign up** - As a user I want to sign up on the webpage so that I can see all the events that I could attend
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Login** - As a user I want to be able to log in on the webpage so that I can get back to my account
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Logout** - As a user I want to be able to log out from the webpage so that I can make sure no one will access my account
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Events list** - As a user I want to see all the events available so that I can choose which ones I want to attend
 
-## Learn More
+**Events create** - As a user I want to create an event so that I can invite others to attend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Events detail** - As a user I want to see the event details and attendee list of one event so that I can decide if I want to attend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Attend event** - As a user I want to be able to attend to event so that the organizers can count me in
 
-### Code Splitting
+## Backlog
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+List of other features outside of the MVPs scope
 
-### Analyzing the Bundle Size
+User profile: - see my profile - upload my profile picture - see other users profile - list of events created by the user - list events the user is attending
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Geo Location: - add geolocation to events when creating - show event in a map in event detail page - show all events in a map in the event list page
 
-### Making a Progressive Web App
+Homepage: - …
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## ROUTES Backend:
 
-### Advanced Configuration
+### Endpoints
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+| Method | Path         | description     | Body |
+| :----: | ------------ | --------------- | ---- |
+|  GET   | `/protected` | protected route |      |
 
-### Deployment
+### Auth
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+| Method | Path      | description    | Body                     |
+| :----: | --------- | -------------- | ------------------------ |
+|  GET   | `/whoami` | who am i       |                          |
+|  POST  | `/signup` | signup a user  | `{ username, password }` |
+|  POST  | `/login`  | login a user   | `{ username, password }` |
+|  GET   | `/logout` | logout session |                          |
 
-### `npm run build` fails to minify
+## Views
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+| View (Component) | Path         | description    |
+| :--------------- | ------------ | -------------- |
+| Home             | `/`          | home           |
+| Login            | `/login`     | login page     |
+| Protected        | `/protected` | protected view |
+
+## Links
+
+### Trello
+
+Link to Trello
+
+### Git
+
+The url to your repository and to your deployed project
+
+[Repository Link](http://github.com/)
+
+[Deploy Link](http://heroku.com/)
+
+### Slides
+
+[Slides Link](http://slides.com/)
